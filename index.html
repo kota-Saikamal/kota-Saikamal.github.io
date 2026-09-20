@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saikamal Kota | Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Saikamal Kota, an aspiring cybersecurity professional.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #172033;
+      background: #f6f8fb;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 92%); margin: auto; }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,.95);
+      border-bottom: 1px solid #e5e9f0;
+      backdrop-filter: blur(8px);
+    }
+    .nav-inner {
+      min-height: 68px; display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
+    }
+    .logo { font-weight: 800; font-size: 1.2rem; color: #2563eb; }
+    nav ul { list-style: none; display: flex; gap: 22px; }
+    nav a:hover { color: #2563eb; }
+    .hero {
+      padding: 105px 0 90px;
+      background: linear-gradient(135deg, #eef5ff, #ffffff);
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr;
+      gap: 50px; align-items: center;
+    }
+    .tag {
+      display: inline-block; padding: 7px 12px; border-radius: 999px;
+      background: #dbeafe; color: #1d4ed8; font-weight: 700;
+      font-size: .85rem; margin-bottom: 18px;
+    }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 1.05; margin-bottom: 18px; }
+    .hero h1 span { color: #2563eb; }
+    .hero p { max-width: 680px; font-size: 1.08rem; color: #526078; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 12px 18px; border-radius: 10px;
+      font-weight: 700; border: 1px solid #2563eb;
+    }
+    .primary { background: #2563eb; color: white; }
+    .secondary { color: #2563eb; background: white; }
+    .profile-card {
+      background: white; border: 1px solid #e3e8f0; border-radius: 20px;
+      padding: 30px; box-shadow: 0 16px 45px rgba(25,45,80,.08);
+    }
+    .profile-card h2 { margin-bottom: 14px; }
+    .profile-card p { color: #5d687b; margin: 8px 0; }
+    section { padding: 75px 0; }
+    .section-title { font-size: 2rem; margin-bottom: 12px; }
+    .section-intro { color: #667085; margin-bottom: 30px; }
+    .grid { display: grid; gap: 20px; }
+    .skills { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card {
+      background: white; border: 1px solid #e4e8ef; border-radius: 16px;
+      padding: 24px;
+    }
+    .card h3 { margin-bottom: 10px; color: #1f2937; }
+    .card p, .card li { color: #5d687b; }
+    ul.clean { list-style: none; }
+    ul.clean li { margin: 7px 0; }
+    .project { border-left: 4px solid #2563eb; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+    .chip {
+      background: #eef2ff; color: #3730a3; padding: 6px 10px;
+      border-radius: 999px; font-size: .85rem; font-weight: 700;
+    }
+    .two-col { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .contact {
+      background: #172033; color: white; border-radius: 22px; padding: 35px;
+    }
+    .contact p { color: #cbd5e1; margin: 8px 0; }
+    .contact a { color: #93c5fd; }
+    footer { text-align: center; padding: 30px; color: #697586; }
+    @media (max-width: 760px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      nav ul { gap: 10px; font-size: .9rem; }
+      .hero { padding-top: 75px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#home">Saikamal Kota</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="tag">Aspiring Cybersecurity Professional</div>
+      <h1>Hi, I'm <span>Saikamal Kota.</span></h1>
+      <p>
+        I have hands-on knowledge of Linux, networking, and security fundamentals,
+        with interests in penetration testing, vulnerability assessment, and
+        defensive security practices.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn secondary" href="mailto:saikamal.kota@gmail.com">Contact Me</a>
+      </div>
+    </div>
+    <div class="profile-card">
+      <h2>Quick Profile</h2>
+      <p><strong>Location:</strong> Hyderabad, India</p>
+      <p><strong>Focus:</strong> Cybersecurity</p>
+      <p><strong>Programming:</strong> C, Python, Bash</p>
+      <p><strong>Tools:</strong> Nmap, Burp Suite, Wireshark, Metasploit</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/kota-Saikamal" target="_blank">kota-Saikamal</a></p>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-intro">
+      Aspiring cybersecurity professional interested in practical security work
+      and software development. I have practical experience developing modular
+      C software for packet parsing, validation, serialization, and binary file handling.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-intro">Technologies and security areas from my resume.</p>
+    <div class="grid skills">
+      <div class="card"><h3>Operating Systems</h3><p>Linux (Kali, Ubuntu), Windows</p></div>
+      <div class="card"><h3>Networking</h3><p>TCP/IP, DNS, HTTP/HTTPS, Subnetting</p></div>
+      <div class="card"><h3>Security</h3><p>Vulnerability Assessment, OWASP Top 10, Threat Modeling</p></div>
+      <div class="card"><h3>Security Tools</h3><p>Nmap, Burp Suite, Wireshark, Metasploit</p></div>
+      <div class="card"><h3>Programming</h3><p>C, Python (basic), Bash (basic)</p></div>
+      <div class="card"><h3>Build & Version Control</h3><p>Git (basic), GCC, Make</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="card project">
+      <h3>Mini Packet Analyzer</h3>
+      <p>
+        Developed a modular C-based packet analyzer for creating, validating,
+        serializing, storing, uploading, and parsing custom binary packets.
+      </p>
+      <ul class="clean">
+        <li>• Implemented DATA, ACK, and ERROR packet types.</li>
+        <li>• Added configurable ACK, SYN, ERROR, and PRIORITY flags.</li>
+        <li>• Implemented validation for version, type, sequence number, flags, payload length, and payload consistency.</li>
+        <li>• Implemented binary serialization and deserialization with file-based packet storage.</li>
+        <li>• Structured the project with separate <code>include/</code> and <code>src/</code> directories and a Makefile.</li>
+      </ul>
+      <div class="chips">
+        <span class="chip">C</span><span class="chip">GCC</span>
+        <span class="chip">Make</span><span class="chip">Git</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education & Certifications</h2>
+    <div class="grid two-col">
+      <div class="card">
+        <h3>B.Tech – Computer Science and Engineering</h3>
+        <p>Siddhartha Institute of Technology and Sciences, Korremula, Hyderabad</p>
+        <p><strong>CGPA:</strong> 8.37 | <strong>Percentage:</strong> 78.7%</p>
+        <br>
+        <h3>Intermediate (MPC)</h3>
+        <p>Narayana Junior College, S.R. Nagar, Hyderabad</p>
+        <p><strong>Marks:</strong> 895/1000 | <strong>Percentage:</strong> 89.5%</p>
+        <br>
+        <h3>SSC</h3>
+        <p><strong>GPA:</strong> 9.8/10 | Hyderabad</p>
+      </div>
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul class="clean">
+          <li>• Introduction to CIP – Certificate</li>
+          <li>• Linux – Certificate</li>
+          <li>• CS50 Python – Certificate</li>
+          <li>• Java – University of Helsinki – Certificate</li>
+        </ul>
+        <br>
+        <h3>Activities & Honors</h3>
+        <ul class="clean">
+          <li>• Active Volunteer – NSS</li>
+          <li>• Runner-up – Telangana District Ranking Chess Championship (2019)</li>
+          <li>• Certificate of Appreciation – Blood Donation</li>
+          <li>• Volunteer Recognition – ATA Vedukalu Grand Finale</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact">
+      <h2>Let's Connect</h2>
+      <p>Email: <a href="mailto:saikamal.kota@gmail.com">saikamal.kota@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saikamal-kota-879446293" target="_blank">linkedin.com/in/saikamal-kota-879446293</a></p>
+      <p>GitHub: <a href="https://github.com/kota-Saikamal" target="_blank">github.com/kota-Saikamal</a></p>
+      <p>Phone: +91-9603776586</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Saikamal Kota. Built with HTML & CSS.</p>
+</footer>
+
+</body>
+</html>
